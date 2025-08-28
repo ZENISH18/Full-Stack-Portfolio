@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript | Jenish</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="javascript.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <span class="portfolio-text"><a href="Home.html">Jenish</a></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="FullStack.html">Full Stack Development</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html" class="active">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>JavaScript</h1>
+          <h2>DOM • Events • APIs • ES6+</h2>
+          <p>
+            JavaScript is the programming language of the web. It powers
+            interactivity, logic, data fetching, and dynamic rendering in the
+            browser. From simple button clicks to complex real-time
+            applications, JavaScript makes websites engaging, responsive, and
+            user-friendly.
+          </p>
+          <p>
+            Core topics include
+            <em
+              >variables, functions, DOM manipulation, events, promises,
+              async/await, fetch APIs, and ES6+ features</em
+            >. It is also used with <strong>Node.js</strong> for backend
+            development and frameworks like
+            <strong>React, Angular, and Vue</strong> for building modern web
+            apps.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="images & logos/javascript.png" alt="JavaScript Illustration" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Demonstration -->
+      <section class="demo">
+        <h2 class="section-title">Demonstration: JavaScript Workflow</h2>
+        <div class="flow-container">
+          <div class="flow-box frontend">
+            DOM & Events <br /><small>(querySelector, addEventListener)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box backend">
+            Logic <br /><small>(conditions, loops, functions)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box database">
+            API Fetch <br /><small>(fetch, async/await, JSON)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box deploy">
+            Dynamic UI <br /><small>(DOM updates, animations)</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tags/Technologies -->
+      <section class="tags">
+        <h2 class="section-title">Core JavaScript Topics</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <i class="fas fa-code"></i>
+            <h3>DOM & Events</h3>
+            <p>Manipulate elements and listen for user interactions.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-cogs"></i>
+            <h3>Logic & Functions</h3>
+            <p>Control flow with loops, conditions, and reusable code.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>APIs & Async</h3>
+            <p>Fetch data from servers with async/await and promises.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Frameworks & Motion</h3>
+            <p>Enhance apps with libraries, effects, and animations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- JS Project 1 -->
+      <section class="project">
+        <center>
+          <h2 class="section-title">JavaScript Project 1: Weather App</h2>
+          <p class="section-subtitle">Get live weather data using API.</p>
+
+          <div class="card">
+            <h2>🌦 Weather Finder</h2>
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="getWeather">Get Weather</button>
+            <div id="weatherResult" style="margin-top: 15px"></div>
+          </div>
+        </center>
+      </section>
+      <br />
+      <br />
+
+      <!-- JS Project 2 -->
+      <section>
+        <center>
+          <h2 class="section-title">JavaScript Project 2: To-Do List</h2>
+          <p class="section-subtitle">
+            Add, complete, and remove tasks interactively.
+          </p>
+          <div class="card todo-card">
+            <h2>✅ To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a task" />
+            <button id="addTask">Add Task</button>
+            <ul id="taskList"></ul>
+          </div>
+        </center>
+      </section>
+      <br /><br />
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-logo">Jenish</h2>
+        <ul class="footer-links">
+          <li><a href="FullStack.html">Full Stack Development</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <div class="footer-contact">
+          <center>
+            <p>
+              Email:
+              <a href="mailto:240706566@uos.ac.uk">bwit24b.jen@ismt.edu.np</a>
+            </p>
+            <p>
+              Phone: <a href="tel:+9779821524186">+977 9821524186</a>,
+              <a href="tel:+9779844775347">+977 9844775347</a>
+            </p>
+          </center>
+        </div>
+        <p class="footer-text">© 2025 Jenish Chhetri. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

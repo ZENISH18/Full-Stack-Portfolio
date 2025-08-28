@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS | Jenish</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <span class="portfolio-text"><a href="Home.html">Jenish</a></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="FullStack.html">Full Stack Development</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" class="active">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>CSS (Cascading Style Sheets)</h1>
+          <h2>Selectors • Box Model • Layout • Animations</h2>
+          <p>
+            CSS is the language that styles the web. It controls colors,
+            typography, spacing, layout, and visual effects for HTML elements.
+            Mastering CSS means understanding how rules
+            <strong>cascade</strong>, how the <strong>box model</strong> works,
+            and how to craft responsive layouts using
+            <strong>Flexbox</strong> and <strong>Grid</strong>.
+          </p>
+          <p>
+            Core topics include
+            <em
+              >selectors & specificity, box model, positioning, Flexbox, Grid,
+              media queries, variables (custom properties), transitions, and
+              animations</em
+            >.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="Images & logos/css.png" alt="CSS Illustration" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Demonstration -->
+      <section class="demo">
+        <h2 class="section-title">Demonstration: CSS Workflow</h2>
+        <div class="flow-container">
+          <div class="flow-box frontend">
+            Selectors & Specificity <br /><small>(* , elem, .class, #id)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box backend">
+            Box Model <br /><small>(margin, border, padding, content)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box database">
+            Layout <br /><small>(Flexbox, Grid, Positioning)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box deploy">
+            Responsive & Effects <br /><small
+              >(Media Queries, Animations)</small
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Tags/Technologies -->
+      <section class="tags">
+        <h2 class="section-title">Core CSS Topics</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <i class="fas fa-paint-roller"></i>
+            <h3>Selectors & Specificity</h3>
+            <p>Target elements precisely and resolve style conflicts.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-square"></i>
+            <h3>Box Model & Position</h3>
+            <p>Spacing, borders, overflow, and positioning strategies.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <h3>Flexbox & Grid</h3>
+            <p>Modern, powerful layout systems for any design.</p>
+          </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Responsive & Motion</h3>
+            <p>Media queries, transitions, transforms, animations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CSS Project 1 -->
+      <section class="project">
+        <center>
+        <h2 class="section-title">CSS Project 1: Animated Pricing Table</h2>
+        <p class="section-subtitle">
+          Responsive grid, accent borders, and subtle transitions.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="pricing-title">Starter</h3>
+            <p class="price"><span>$</span>9<span>/mo</span></p>
+            <ul class="features">
+              <li>Basic components</li>
+              <li>Email support</li>
+              <li>Community access</li>
+            </ul>
+            <button class="plan-btn">Choose Plan</button>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="badge">Popular</div>
+            <h3 class="pricing-title">Pro</h3>
+            <p class="price"><span>$</span>19<span>/mo</span></p>
+            <ul class="features">
+              <li>Everything in Starter</li>
+              <li>Advanced layouts</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="plan-btn">Choose Plan</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-title">Enterprise</h3>
+            <p class="price"><span>$</span>49<span>/mo</span></p>
+            <ul class="features">
+              <li>Custom components</li>
+              <li>Design reviews</li>
+              <li>Dedicated manager</li>
+            </ul>
+            <button class="plan-btn">Choose Plan</button>
+          </div>
+        </div></center>
+      </section>
+      <br>
+      <br>
+
+      <!-- CSS Project 2 -->
+      <section><center>
+        <h2 class="section-title">CSS Project 2: Image Transformer</h2>
+        <p class="section-subtitle">
+          Rotate and control opacity of the image with sliders.
+        </p>
+        <div class="card">
+          <h2>🌀 Image Transformer</h2>
+          <p>Rotate and control opacity of the image with sliders.</p>
+
+          <div class="image-box">
+            <img
+              id="myImage"
+              src="image-control.webp"
+              alt="Sample Image"
+            />
+          </div>
+
+          <div class="controls">
+            <label>Rotation: <span id="rotateVal">0</span>°</label>
+            <input type="range" id="rotateSlider" min="0" max="360" value="0" />
+
+            <label>Opacity: <span id="opacityVal">1</span></label>
+            <input
+              type="range"
+              id="opacitySlider"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
+          </div>
+        </div></center>
+      </section>
+      <br><br>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-logo">Jenish</h2>
+        <ul class="footer-links">
+          <li><a href="FullStack.html">Full Stack Development</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <div class="footer-contact">
+          <center>
+            <p>
+              Email:
+              <a href="mailto:240706566@uos.ac.uk">bwit24b.jen@ismt.edu.np</a>
+            </p>
+            <p>
+              Phone: <a href="tel:+9779821524186">+977 9821524186</a>,
+              <a href="tel:+9779844775347">+977 9844775347</a>
+            </p>
+          </center>
+        </div>
+        <p class="footer-text">© 2025 Jenish Chhetri. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="css.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Development | Jenish</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="FullStack.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <span class="portfolio-text"><a href="Home.html">Jenish</a></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="FullStack.html" class="active">Full Stack Development</a>
+          </li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Full Stack Development</h1>
+          <h2>Frontend • Backend • Database • Deployment</h2>
+          <p>
+            Full Stack Development is the practice of creating complete web
+            applications that cover both the <strong>frontend</strong> (user
+            interface) and <strong>backend</strong> (server logic and
+            databases).
+          </p>
+          <p>
+            Tools include
+            <em
+              >HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, MySQL,
+              Docker, and AWS</em
+            >.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="Images & logos/Fullstack.webp" alt="Full Stack Illustration" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Demonstration -->
+      <section class="demo">
+        <h2 class="section-title">Demonstration: Web Application Flow</h2>
+        <div class="flow-container">
+          <div class="flow-box frontend">
+            Frontend <br /><small>(HTML, CSS, JS)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box backend">
+            Backend <br /><small>(Node.js)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box database">
+            Database <br /><small>(MySQL)</small>
+          </div>
+          <i class="fas fa-arrow-right"></i>
+          <div class="flow-box deploy">
+            Deployment <br /><small>(GitHub)</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tags/Technologies -->
+      <section class="tags">
+        <h2 class="section-title">Technologies in Full Stack</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <i class="fas fa-code"></i>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="tech-card">
+            <i class="fas fa-server"></i>
+            <h3>Backend</h3>
+            <p>Node.js, Express.js</p>
+          </div>
+          <div class="tech-card">
+            <i class="fas fa-database"></i>
+            <h3>Database</h3>
+            <p>MongoDB, MySQL</p>
+          </div>
+          <div class="tech-card">
+            <i class="fas fa-cloud"></i>
+            <h3>Deployment</h3>
+            <p>GitHub, Docker, AWS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mini Project -->
+      <section class="project">
+        <h2 class="section-title">Mini Project: Interactive Tech Stack</h2>
+        <p class="section-subtitle">Click on each part to learn more!</p>
+        <div class="stack-diagram">
+          <div class="stack-part" data-info="Frontend creates UI.">
+            🎨 Frontend
+          </div>
+          <div class="stack-part" data-info="Backend handles server logic.">
+            ⚙️ Backend
+          </div>
+          <div
+            class="stack-part"
+            data-info="Database stores and retrieves data."
+          >
+            🗄️ Database
+          </div>
+          <div class="stack-part" data-info="Deployment puts your app online.">
+            ☁️ Deployment
+          </div>
+        </div>
+        <p id="output" class="info-box">Click an item to see details...</p>
+      </section>
+
+      <!-- NEW Project: Contact/Login Form -->
+      <section class="login-project">
+        <center>
+          <h2 class="section-title">Mini Project: Contact Form</h2>
+          <p class="section-subtitle">
+            Fill in the form below (validation enabled)
+          </p>
+        </center>
+        <div class="form-container">
+          <h1>Registration Form</h1>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+              <span id="name-error" class="error"
+                >Name is required (min 3 chars)</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <span id="email-error" class="error">Enter a valid email</span>
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age: <span id="age-value">25</span></label>
+              <input
+                type="range"
+                id="age"
+                name="age"
+                min="18"
+                max="100"
+                value="25"
+                class="age-slider"
+              />
+              <span id="age-error" class="error"
+                >Age must be between 18–100</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label>Select a Course:</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="course1"
+                    name="course"
+                    value="Web Development"
+                  />
+                  <label for="course1">Web Development</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="course2"
+                    name="course"
+                    value="Data Science"
+                  />
+                  <label for="course2">Data Science</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="course3"
+                    name="course"
+                    value="Mobile App Development"
+                  />
+                  <label for="course3">Mobile App Development</label>
+                </div>
+              </div>
+              <span id="course-error" class="error"
+                >Please select a course</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <span id="message-error" class="error"
+                >Message must be at least 10 characters</span
+              >
+            </div>
+
+            <div class="form-group terms">
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms">I agree to the terms and conditions</label>
+              <span id="terms-error" class="error"
+                >You must agree before submitting</span
+              >
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-logo">Jenish</h2>
+        <ul class="footer-links">
+          <li><a href="FullStack.html">Full Stack Development</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="bootstrap.html">Bootstrap</a></li>
+          <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <div class="footer-contact">
+          <center>
+            <p>
+              Email:
+              <a href="mailto:240706566@uos.ac.uk">bwit24b.jen@ismt.edu.np</a>
+            </p>
+            <p>
+              Phone: <a href="tel:+9779821524186">+977 9821524186</a>,
+              <a href="tel:+9779844775347">+977 9844775347</a>
+            </p>
+          </center>
+        </div>
+        <p class="footer-text">© 2025 Jenish Chhetri. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="FullStack.js"></script>
+  </body>
+</html>
